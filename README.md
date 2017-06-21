@@ -181,7 +181,9 @@ create a new Ad
 | doors | No | Numeric string | door number
 | end_tag | No | Numeric string | end of the plate
 | car_features | No | Array numeric | features
-| images | No | Array string | Ad images url array (not allowed repeated URLs, max 6 images. First image will be the Main picture)
+| images | No | Array string | Ad images url array 
+
+-Important for images array: allowed repeated URLs, max 6 images. First image will be the Main picture)
 
 ```sh
 $data['id']='{identify}';
