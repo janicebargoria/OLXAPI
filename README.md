@@ -46,7 +46,7 @@ When requesting the access key the client must request permissions through the s
 
 ```sh
 $inventory = new Inventory(array(
-  client_id'=>'{client_id}',
+  'client_id'=>'{client_id}',
   'client_secret'=>'{client_secret}',
   'scope'=>'autoupload',
   'redirect_uri' => '{rediret_uri}',
