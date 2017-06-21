@@ -232,15 +232,15 @@ $response = $inventory->getStatusAd($data);
 
 #### Expected Return
 autoupload_status 
-..* done: All ads were processed
-..* pending: At least one ad is still in the queue import
+- done: All ads were processed
+- pending: At least one ad is still in the queue import
 
 status
-..* peding: ad will be processed
-..* error: error in ad
-..* queued: The ad was entered and will be activated soon
-..* accepted: actived ad
-..* refused: ad not active
+- peding: ad will be processed
+- error: error in ad
+- queued: The ad was entered and will be activated soon
+- accepted: actived ad
+- refused: ad not active
 
 message: Warning messages about errors occurred
 
