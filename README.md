@@ -19,8 +19,6 @@ The Website of OLX Ltda, is intended to disclose advertisements, surveys, as wel
 ## Give Feedback
 Please report bugs or issues to https://github.com/Veloccer/olx/issues
 
-## Get Start
-
 ## Instalation
 step by step - not ready
 
