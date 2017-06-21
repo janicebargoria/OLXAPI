@@ -46,11 +46,11 @@ When requesting the access key the client must request permissions through the s
 
 ```sh
 $inventory = new Inventory(array(
-	'client_id'=>'{client_id}',
-    'client_secret'=>'{client_secret}',
-    'scope'=>'autoupload',
-    'redirect_uri' => '{rediret_uri}',
-    'state'=>'{state}'
+  client_id'=>'{client_id}',
+  'client_secret'=>'{client_secret}',
+  'scope'=>'autoupload',
+  'redirect_uri' => '{rediret_uri}',
+  'state'=>'{state}'
 ));
 
 $url = $inventory->getLoginUrl();
@@ -81,10 +81,10 @@ After receiving the authorization code, the user can exchange for an access key 
 
 ```sh
 $inventory = new Inventory(array(
-	'code'=>'{code}',
-	'client_id'=>'{client_id}',
-    'client_secret'=>'{client_secret}',
-    'redirect_uri' => '{rediret_uri}'
+  'code'=>'{code}',
+  'client_id'=>'{client_id}',
+  'client_secret'=>'{client_secret}',
+  'redirect_uri' => '{rediret_uri}'
 ));
 
 $url = $inventory->getAccessToken();
