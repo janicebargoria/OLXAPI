@@ -56,10 +56,10 @@ $inventory = new Inventory(array(
 $url = $inventory->getLoginUrl();
 ```
 
-An example URL is shown below:
-https://auth.olx.com.br/oauth?scope=basic_user_info&state=/profile&redirect_uri=https://yourserver.com/code&response_type=code&client_id= ​1055d3e698d289f2af8663725127bd4b
+An URL example: https://auth.olx.com.br/oauth?scope=basic_user_info&state=/profile&redirect_uri=https://yourserver.com/code&response_type=code&client_id= ​1055d3e698d289f2af8663725127bd4b
 
 If requested permission to the user is successful server sends to the client through the parameters in the URI:
+
 | Value | Description| 
 | ------ | ------ |
 | code | Authorization code used to request permission to access a user's resources. Expires 10 minutes after being generated and can not be reused.
