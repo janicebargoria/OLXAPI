@@ -35,6 +35,7 @@ At first, you register your application on [olx.com](http://www.olx.com.br), lea
 
 #### Permission
 When requesting the access key the client must request permissions through the scope parameter. These requests will be sent to the user so that he can allow access or not. The scope parameter value is expressed as a case-sensitive list separated by spaces, regardless of order.
+
 | Value | Description| 
 | ------ | ------ |
 | basic_user_info | Allows access to basic user information. Ex: full name and email.
