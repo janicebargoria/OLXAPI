@@ -22,8 +22,6 @@ Please report bugs or issues to https://github.com/Veloccer/olx/issues
 ## Instalation
 step by step - not ready
 
-### include
-
 ## Access Token
 ### Step 1 - Authorization
 At first, you register your application on [olx.com](http://www.olx.com.br), learn more about this in [click here](https://www.google.com.br/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&ved=0ahUKEwjsj_rg987UAhXDx5AKHQatAOgQFggqMAE&url=https%3A%2F%2Folxbrasil.zendesk.com%2Fhc%2Fpt-br%2Farticle_attachments%2F115000987405%2FAPI_OLX_2017.pdf&usg=AFQjCNGqSTATZ1KkGZuar_CeJlr3ldUfGQ&sig2=9zaWOEKnBTktc5V7PwnzGQ). The authorization code is obtained by directing to the authentication page of olx.com.br that, after authenticating the user with login and password, will be redirected again for application along with the authorization code. observe the example below:
