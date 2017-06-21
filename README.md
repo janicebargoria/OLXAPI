@@ -183,7 +183,7 @@ create a new Ad
 | car_features | No | Array numeric | features
 | images | No | Array string | Ad images url array 
 
--Important for images array: not allowed repeated URLs, max 6 images, first image will be the Main picture)
+ - Important for images array: not allowed repeated URLs, max 6 images, first image will be the Main picture
 
 ```sh
 $data['id']='{identify}';
@@ -208,7 +208,8 @@ $data['images']=[{url1}, {url2}, {url3}];
 $inventory = new Inventory($token);
 $ad = $inventory->createAd($data);
 ```
-return: array
+return: array 
+
 In array contain a string with a token to be used to access the status of the ad
 
 See the example below:
