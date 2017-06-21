@@ -183,7 +183,7 @@ create a new Ad
 | car_features | No | Array numeric | features
 | images | No | Array string | Ad images url array 
 
--Important for images array: allowed repeated URLs, max 6 images. First image will be the Main picture)
+-Important for images array: not allowed repeated URLs, max 6 images, first image will be the Main picture)
 
 ```sh
 $data['id']='{identify}';
