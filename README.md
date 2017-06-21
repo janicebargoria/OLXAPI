@@ -84,7 +84,7 @@ $inventory = new Inventory(array(
   'redirect_uri' => '{rediret_uri}'
 ));
 
-$url = $inventory->getAccessToken();
+$token = $inventory->getAccessToken();
 ```
 If the request succeeds, the user will receive the access token to use OLX features.
 
