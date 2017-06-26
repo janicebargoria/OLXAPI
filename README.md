@@ -10,7 +10,7 @@ List of dependencies for use sdk
   - Apache
 
 ## Give Feedback
-Please report bugs or issues to https://github.com/Veloccer/olx/issues
+Please report bugs or issues to [click here](https://github.com/Veloccer/olx/issues)
 
 ## Instalation
 step by step - not ready
