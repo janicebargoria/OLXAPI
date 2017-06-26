@@ -372,5 +372,20 @@ class olx
             ->getResponse();
     }
 
+    /**
+     *
+     * Used internally, but can also be used by end-users if they want
+     * to create completely custom API queries without modifying this library.
+     *
+     * @param string $url
+     *
+     * @return array
+     */
+    public function request(
+        $url)
+    {
+        return new Request($this, $url);
+    }
+
 
 }
