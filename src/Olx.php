@@ -12,7 +12,7 @@ namespace OlxAPI;
  *
  */
 
-class olx
+class Olx
 {
 
 /**
@@ -58,12 +58,10 @@ class olx
 			self::$cfg['redirect_uri'] 	    = $data['redirect_uri'];
 			self::$cfg['client_id'] 	    = $data['client_id'];
 			self::$cfg['response_type']     = 'code';
+            self::$cfg['scope']             = 'autoupload';
 
 			if(isset($data['scope'])) 
 				self::$cfg['scope'] 	    = $data['scope'];
-
-			if(isset($data['state'])) 
-				self::$cfg['state']         = $data['state'];
 
 			if(isset($data['code'])) 			
 				self::$cfg['code'] 	        = $data['code'];
@@ -72,7 +70,7 @@ class olx
 				self::$cfg['client_secret'] = $data['client_secret'];			
 
 		} else{
-			self::$cfg['token'] = $data;
+			self::$cfg['token'] = 'Bearer ' . $data;
 		}
     }
 
@@ -87,7 +85,9 @@ class olx
 	**/
     public function getLoginUrl()
 	{
-		$endpoint = $this->_loginUrl . '/auth';
+        unset(self::$cfg['client_secret']);
+        unset(self::$cfg['code']);
+		$endpoint = $this->_loginUrl . '?';
 		return $endpoint . http_build_query(self::$cfg);
 	}
 
@@ -103,6 +103,7 @@ class olx
 	{
 		return $this->request($this->_loginUrl . '/token')
 			->addHeader('Accept', 'application/json')
+            ->addHeader('Content­Type', 'application/x­www­form­urlencoded')
             ->addPost('code', self::$cfg['code'])
             ->addPost('client_id', self::$cfg['client_id'])
             ->addPost('client_secret', self::$cfg['client_secret'])
@@ -368,7 +369,7 @@ class olx
 		return $this->request($endpoint)
             ->addHeader('Accept', 'application/json')
             ->addPut('access_token', self::$cfg['token'])
-            ->addPut('ad_list' $fields)
+            ->addPut('ad_list', $fields)
             ->getResponse();
     }
 

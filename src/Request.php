@@ -24,7 +24,7 @@ class Request
     private $_headers = [];
 
     public function __construct(
-        Icarros $parent,
+        Olx $parent,
         $url)
     {
         $this->_userAgent =  'Veloccer/SDK';
@@ -101,11 +101,11 @@ class Request
         curl_setopt($ch, CURLOPT_ENCODING,  '');
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
         curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
-        curl_setopt($ch, CURLOPT_HTTPHEADER, Utils::convertHeaderCurl($this->$_headers));
+        curl_setopt($ch, CURLOPT_HTTPHEADER, Utils::convertHeaderCurl($this->_headers));
 
         if($this->_posts){
             curl_setopt($ch, CURLOPT_POST, true);
-            curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($this->_posts));
+            curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($this->_posts));
         }
 
         if($this->_puts){

@@ -1,5 +1,5 @@
 <?php
-namespace IcarrosAPI;
+namespace OlxAPI;
 
 
 class Utils
@@ -11,10 +11,9 @@ class Utils
 
     	foreach ($array as $key => $value) {
     		
-    		$headers[] = [ $key ': '. $value];
+    		$headers[] = $key. ': '. $value;
 
     	}
-    	
         return $headers;
     }
 
