@@ -18,12 +18,24 @@ step by step - not ready
 # Wiki
 To learn more about api olx, all features, functions, read the [wiki here](https://github.com/Veloccer/OLX/wiki).
 
+# Return
+```sh
+
+  array(2){
+    'status' => 'ok',
+    'body' => json_body
+    };
+```
+
 # Error
 ```sh
-array(2) { 
-    ["status"]=> string(4) "fail" 
-    ["message"]=> string(101) "Mensage Error!" 
-  } 
+
+  array(4){
+    'status' => 'fail',
+    'http_code' => http_code,
+    'header' => header,
+    'body' => json_body
+    };
 ```
 
 # License
