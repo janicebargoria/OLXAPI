@@ -7,10 +7,10 @@ $olx = new olx(
 	array(
 		'response_type'=>'{code}',
 		'client_id'=>'{client_id}',
-	    'client_secret'=>'{client_secret}',
-	    'redirect_uri' => '{redirect_uri}',
-	    'state'=>'{state}',
-	    'code'=>'{code}'
+		'client_secret'=>'{client_secret}',
+		'redirect_uri' => '{redirect_uri}',
+		'state'=>'{state}',
+		'code'=>'{code}'
 	)
 );
 
