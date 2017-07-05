@@ -70,7 +70,7 @@ class Olx
 				self::$cfg['client_secret'] = $data['client_secret'];			
 
 		} else{
-			self::$cfg['token'] = 'Bearer ' . $data;
+			self::$cfg['token'] = $data;
 		}
     }
 

@@ -105,7 +105,7 @@ class Request
 
         if($this->_posts){
             curl_setopt($ch, CURLOPT_POST, true);
-            curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($this->_posts));
+            curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($this->_posts));
         }
 
         if($this->_puts){
