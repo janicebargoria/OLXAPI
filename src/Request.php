@@ -6,7 +6,7 @@ class Request
     /**
      * The Icarros class instance we belong to.
      *
-     * @var \IcarrosAPI\Icarros
+     * @var \OlxAPI\Olx
      */
     protected $_parent;
 

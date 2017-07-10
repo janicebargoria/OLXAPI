@@ -10,13 +10,13 @@ List of dependencies for use sdk
   - Apache
 
 ## Give Feedback
-Please report bugs or issues to [click here](https://github.com/Veloccer/olx/issues)
+Please report bugs or issues to [click here](https://github.com/Veloccer/OLXAPI/issues)
 
 ## Instalation
 step by step - not ready
 
 # Wiki
-To learn more about api olx, all features, functions, read the [wiki here](https://github.com/Veloccer/OLX/wiki).
+To learn more about api olx, all features, functions, read the [wiki here](https://github.com/Veloccer/OLXAPI/wiki).
 
 # Return
 ```sh
@@ -41,4 +41,4 @@ To learn more about api olx, all features, functions, read the [wiki here](https
 # License
 OLX SDK is Copyright © 2017 haganicolau.
 
-It is free software, and may be redistributed under the terms specified in the [LICENSE.txt](https://github.com/Veloccer/olx/blob/master/LICENSE.txt)
+It is free software, and may be redistributed under the terms specified in the [LICENSE.txt](https://github.com/Veloccer/OLXAPI/blob/master/LICENSE.txt)
