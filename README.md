@@ -23,7 +23,7 @@ To learn more about api olx, all features, functions, read the [wiki here](https
 
   array(2){
     'status' => 'ok',
-    'body' => json_body
+    'body' => array()
     };
 ```
 
